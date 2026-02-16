@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>БілімПортал — Онлайн курстар</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Hero -->
+  <header class="bg-primary text-white py-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="brand mb-3 mb-md-0">
+          <h1 class="h3 mb-0">БілімПортал</h1>
+          <p class="mb-0 small">Сізге білім — әрқаш��н қолжетімді</p>
+        </div>
+        <div>
+          <a href="#courses" class="btn btn-outline-light me-2">Курстар</a>
+          <a href="#contact" class="btn btn-light text-primary">Тіркелу</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-5">
+        <div class="col-lg-6">
+          <h2 class="display-6 fw-bold">Өзіңізге ыңғайлы форматта оқу — қолжетімді, сапалы және нәтижелі</h2>
+          <p class="lead">Біздің курстар практикалық бағытта жасалған, әркімге арналған оқу жолдары және сертификат беріледі.</p>
+          <a href="#contact" class="btn btn-light btn-lg text-primary me-2">Тіркелу</a>
+          <a href="#courses" class="btn btn-outline-light btn-lg">Курстарды қарау</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="illustration" class="img-fluid hero-img" style="max-width:220px; opacity:0.95;">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features / Courses -->
+  <section id="courses" class="py-5">
+    <div class="container">
+      <h3 class="mb-4 text-center">Басты курстар</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Python негіздері</h5>
+              <p class="card-text">Бастауыштарға арналған практикалық курс. Негізгі синтаксис, деректер құрылымдары және тапсырмалар арқылы оқыту.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-primary w-100 enroll-btn" data-course="Python негіздері">Курсқа жазылу</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Жұмысқа дайындық</h5>
+              <p class="card-text">Резюме дайындау, сұхбатқа дайындалу және кәсіби дағдылар — жұмысқа тез орналасуға арналған бағдарлама.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-primary w-100 enroll-btn" data-course="Жұмысқа дайындық">Курсқа жазылу</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Мектеп математикасы</h5>
+              <p class="card-text">Олимпиада деңгейіне дайындық және мектеп бағдарламасын нығайту. Тапсырмалар мен шешімдер практикасымен.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <button class="btn btn-primary w-100 enroll-btn" data-course="Мектеп математикасы">Курсқа жазылу</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h4 class="mb-4 text-center">Неге біз?</h4>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <h5>Практикалық ��апсырмалар</h5>
+          <p class="small mb-0">Әр сабақта нақты тапсырмалар және шешімдер бар.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Сертификат</h5>
+          <p class="small mb-0">Курсты аяқтағаннан кейін сертификат беріледі.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Икемді баға</h5>
+          <p class="small mb-0">Бір реттік төлем немесе ай сайынғы жазылым — сізге ыңғайлысын таңдаңыз.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Enrollment form -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h4 class="mb-4 text-center">Тіркелу / Байланыс</h4>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="enrollForm" class="card p-4 shadow-sm">
+            <div id="formAlert" class="alert d-none" role="alert"></div>
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Аты-жөні</label>
+              <input type="text" id="name" class="form-control" placeholder="Аты-жөні" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="email@example.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="course" class="form-label">Курс таңдау</label>
+              <select id="course" class="form-select" required>
+                <option value="">-- Таңдаңыз --</option>
+                <option>Python негіздері</option>
+                <option>Жұмысқа дайындық</option>
+                <option>Мектеп математикасы</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Хабарлама (қалауыңызша)</label>
+              <textarea id="message" class="form-control" rows="3" placeholder="Қосымша сұрақтарыңыз..."></textarea>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between">
+              <small class="text-muted">Байланыс: info@bilimportal.kz</small>
+              <button type="submit" class="btn btn-primary">Тіркелу</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center small">
+      &copy; <span id="year"></span> БілімПортал. Барлық құқықтар сақталған.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Bootstrap JS (popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
